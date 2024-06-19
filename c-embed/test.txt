@@ -1,0 +1,8 @@
+The first rule is typical of quantum physics. It results from the postulate of
+unitary evolution. The second rule is a classical rule of the addition of
+probabilities. It results from decoherence through observation. When
+intermediate states are observed, the observed system is represented by a
+mixture of states. The classical rule of addition of probabilities must then be
+applied. Entanglement by observation thus explains Feynman's second rule. This
+explains the Feynman Rules for calculating probabilities in quantum physics
+(Feynman 1966).
