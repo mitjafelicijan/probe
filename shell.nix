@@ -5,5 +5,7 @@
 		gnumake
 		nasm
 		tinycc
+    zig
+    zls
 	];
 }
