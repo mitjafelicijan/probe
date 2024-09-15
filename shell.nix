@@ -7,8 +7,8 @@
 		nasm
 		tinycc
 		clang
-    zig
-    zls
+		zig
+		zls
 
 		# Dev libraries and deps.
 		xorg.libX11
