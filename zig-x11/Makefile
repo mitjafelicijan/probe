@@ -6,3 +6,6 @@ window-test:
 
 window-test-zig:
 	zig cc window.c -o window -lX11
+
+clean:
+	-rm window a.out
