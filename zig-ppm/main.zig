@@ -1,7 +1,6 @@
 // PPM image format -  https://netpbm.sourceforge.net/doc/ppm.html
 
 const std = @import("std");
-const debug = @import("std").debug;
 
 const ImageSize = 600;
 
