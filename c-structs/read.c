@@ -7,7 +7,7 @@ int main(void) {
 
     Character ch;
 
-    FILE* file = fopen("character.dat", "rb");
+    FILE *file = fopen("character.dat", "rb");
     if (file == NULL) {
         perror("Error opening file");
         return 1;

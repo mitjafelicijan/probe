@@ -12,7 +12,7 @@ int main(void) {
     ch.health = 30;
     ch.damage = 5.9;
 
-    FILE* file = fopen("character.dat", "wb");
+    FILE *file = fopen("character.dat", "wb");
     if (file == NULL) {
         perror("Error opening file");
         return 1;

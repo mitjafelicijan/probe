@@ -3,4 +3,3 @@ typedef struct {
     int health;
     float damage;
 } Character;
-
