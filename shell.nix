@@ -7,7 +7,7 @@
 		nasm
 		tinycc
 		clang
-		zig
+		zig_0_11
 		zls
 
 		# Dev libraries and deps.
