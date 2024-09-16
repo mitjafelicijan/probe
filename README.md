@@ -18,3 +18,4 @@ reference them later if I need to.
 | [zig-structs](./zig-structs)     | Serialization of a struct into JSON and then reading it back.  |
 | [zig-telnet](./zig-telnet)       | Connects to Redis server like it is a basic telnet server.     |
 | [zig-x11](./zig-x11)             | Uses X11 to create a basic window without any bindings needed. |
+| [zig-http](./zig-http)           | Basic example of a HTTP 1.1 server without any routing etc.    |
