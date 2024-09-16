@@ -24,8 +24,8 @@ const Color = struct {
 };
 
 pub fn main() !void {
-    const imageFile = try std.fs.cwd().createFile("image.ppm", .{});
-    defer imageFile.close();
+    const image_file = try std.fs.cwd().createFile("image.ppm", .{});
+    defer image_file.close();
 
     // NOTE: This should be done at compile time instead since the data is
     //       known in advance. I am leaving this here as a reference.
@@ -35,10 +35,10 @@ pub fn main() !void {
     //       and there must be a better way of doing this. Good enough!
     const header = "P3\n" ++ std.fmt.comptimePrint("{d}", .{ImageSize}) ++ " " ++ std.fmt.comptimePrint("{d}", .{ImageSize}) ++ "\n255\n";
 
-    _ = try imageFile.write(header);
+    _ = try image_file.write(header);
 
     for (0..(ImageSize * ImageSize)) |_| {
         const color = Color.initRandom();
-        _ = try imageFile.write(color.toString());
+        _ = try image_file.write(color.toString());
     }
 }
