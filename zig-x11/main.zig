@@ -9,11 +9,11 @@ pub fn main() !void {
         return error.DisplayOpenFailed;
     }
 
-    const rootWindow = xlib.XDefaultRootWindow(display);
+    const root_window = xlib.XDefaultRootWindow(display);
 
-    const mainWindow = xlib.XCreateSimpleWindow(
+    const main_window = xlib.XCreateSimpleWindow(
         display,
-        rootWindow,
+        root_window,
         0,
         0,
         800,
@@ -23,7 +23,7 @@ pub fn main() !void {
         0xFF0000,
     );
 
-    _ = xlib.XMapWindow(display, mainWindow);
+    _ = xlib.XMapWindow(display, main_window);
     _ = xlib.XFlush(display);
 
     while (true) {
