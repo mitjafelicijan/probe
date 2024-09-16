@@ -1,3 +1,5 @@
+// This is here just for reference. It is not required for this example.
+
 #include <X11/Xlib.h>
 #include <unistd.h>
 
