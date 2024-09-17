@@ -19,3 +19,4 @@ reference them later if I need to.
 | [zig-telnet](./zig-telnet)       | Connects to Redis server like it is a basic telnet server.     |
 | [zig-x11](./zig-x11)             | Uses X11 to create a basic window without any bindings needed. |
 | [zig-http](./zig-http)           | Basic example of a HTTP 1.1 server without any routing etc.    |
+| [zig-x11-box](./zig-x11-box)     | Move a box around with arrow keys with Xlib and Zig.           |
