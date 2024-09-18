@@ -1,4 +1,4 @@
 *.c linguist-vendored
 *.h linguist-vendored
 *.lua linguist-vendored
-Makefile linguist-vendored
+makefile linguist-vendored
