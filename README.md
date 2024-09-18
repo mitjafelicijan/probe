@@ -7,6 +7,9 @@ reference them later if I need to.
 > Check `shell.nix` to see the software and dependencies that are used
 > in these examples. If you use Nix just do `nix-shell shell.nix`.
 
+Every test has it's own `Makefile` so please check that before you try
+running it.
+
 | Example                          | What does it do?                                               |
 |----------------------------------|----------------------------------------------------------------|
 | [c-asm](./c-asm)                 | Calls a function written in ASM from C code.                   |
@@ -20,3 +23,4 @@ reference them later if I need to.
 | [zig-x11](./zig-x11)             | Uses X11 to create a basic window without any bindings needed. |
 | [zig-http](./zig-http)           | Basic example of a HTTP 1.1 server without any routing etc.    |
 | [zig-x11-box](./zig-x11-box)     | Move a box around with arrow keys with Xlib and Zig.           |
+| [zig-kv-store](./zig-kv-store)   | Simple Key-value store that mimics memcached written in Zig.   |
