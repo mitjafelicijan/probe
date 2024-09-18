@@ -1,3 +1,5 @@
+// NOTE: This is still WIP and not finished yet.
+
 // https://github.com/mikolajgucki/lua-tutorial/blob/master/00-lua-state/lua-state.md
 // https://github.com/natecraddock/ziglua/
 
@@ -11,7 +13,7 @@ const lua = @cImport({
 pub const Lua = opaque {};
 
 pub fn main() !void {
-    var L = lua.luaL_newstate();
+    const L = lua.luaL_newstate();
     defer lua.lua_close(L);
 
     lua.luaL_openlibs(L);
