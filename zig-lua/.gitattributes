@@ -1,1 +1,2 @@
 *.c linguist-vendored
+*.lua linguist-vendored
