@@ -25,3 +25,4 @@ running it.
 | [zig-x11-box](./zig-x11-box)     | zig-0.11.0 | Move a box around with arrow keys with Xlib and Zig.           |
 | [zig-kv-store](./zig-kv-store)   | zig-0.11.0 | Simple Key-value store that mimics memcached written in Zig.   |
 | [zig-wad](./zig-wad)             | zig-0.11.0 | Reads doom.wad and extracts the identification header.         |
+| [zig-os-props](./zig-os-props)   | zig-0.11.0 | Detects properties of the target operating system.             |
