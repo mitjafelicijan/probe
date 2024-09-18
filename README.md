@@ -10,6 +10,10 @@ reference them later if I need to.
 Every test has it's own `Makefile` so please check that before you try
 running it.
 
+> [!IMPORTANT]  
+> Some of the examples are specific to certain operating systems and
+> they will not work everywhere. Take this into account.
+
 | Example                          | Compiler   | What does it do?                                               |
 |----------------------------------|------------|----------------------------------------------------------------|
 | [c-asm](./c-asm)                 | clang-17   | Calls a function written in ASM from C code.                   |
