@@ -12,10 +12,10 @@ running it.
 
 | Example                          |            | What does it do?                                               |
 |----------------------------------|------------|----------------------------------------------------------------|
-| [c-asm](./c-asm)                 |            | Calls a function written in ASM from C code.                   |
-| [c-embed](./c-embed)             |            | Embedding external resources in compiled binary.               |
-| [c-signals](./c-signals)         |            | Uses SIGUSR1 and SIGUSR2 as IPC mechanism.                     |
-| [c-structs](./c-structs)         |            | Saves and reads structs in/from binary files.                  |
+| [c-asm](./c-asm)                 | clang-17    | Calls a function written in ASM from C code.                   |
+| [c-embed](./c-embed)             | clang-17    | Embedding external resources in compiled binary.               |
+| [c-signals](./c-signals)         | clang-17    | Uses SIGUSR1 and SIGUSR2 as IPC mechanism.                     |
+| [c-structs](./c-structs)         | clang-17    | Saves and reads structs in/from binary files.                  |
 | [zig-c-interop](./zig-c-interop) | zig-0.11.0 | Uses functions written in C from Zig code.                     |
 | [zig-ppm](./zig-ppm)             | zig-0.11.0 | Creates an image with random pixels in PPM image format.       |
 | [zig-structs](./zig-structs)     | zig-0.11.0 | Serialization of a struct into JSON and then reading it back.  |
