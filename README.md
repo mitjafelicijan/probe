@@ -24,3 +24,4 @@ running it.
 | [zig-http](./zig-http)           | Basic example of a HTTP 1.1 server without any routing etc.    |
 | [zig-x11-box](./zig-x11-box)     | Move a box around with arrow keys with Xlib and Zig.           |
 | [zig-kv-store](./zig-kv-store)   | Simple Key-value store that mimics memcached written in Zig.   |
+| [zig-wad](./zig-wad)             | Reads doom.wad and extracts the identification header.         |
