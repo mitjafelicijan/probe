@@ -12,7 +12,9 @@ running it.
 
 > [!IMPORTANT]  
 > Some of the examples are specific to certain operating systems and
-> they will not work everywhere. Take this into account.
+> they will not work everywhere. Take this into account. This code is
+> also written in the most explicit way and lacks massively when it
+> comes to checking of errors etc.
 
 | Example                          | Compiler   | What does it do?                                               |
 |----------------------------------|------------|----------------------------------------------------------------|
