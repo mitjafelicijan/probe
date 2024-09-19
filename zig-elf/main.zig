@@ -36,7 +36,11 @@ pub fn main() !void {
     const header: *Elf64ExecutionHeader = @ptrCast(@alignCast(&buffer));
 
     std.debug.print("sizeOf(Elf64ExecutionHeader) = {}\n", .{@sizeOf(Elf64ExecutionHeader)});
-    std.debug.print("bitSizeOf(Elf64ExecutionHeader) = {}\n", .{@bitSizeOf(Elf64ExecutionHeader)});
+    std.debug.print("bitSizeOf(Elf64ExecutionHeader) = {} ({}/8={d})\n", .{
+        @bitSizeOf(Elf64ExecutionHeader),
+        @bitSizeOf(Elf64ExecutionHeader),
+        @bitSizeOf(Elf64ExecutionHeader) / 8,
+    });
 
     std.debug.print("Object file type: {}\n", .{header.type});
     std.debug.print("Architecture: {}\n", .{header.machine});
