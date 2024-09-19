@@ -6,7 +6,7 @@
 //
 // Packet specification
 //   1 byte   ... Tag
-//   1 bytes  ... Length
+//   1 byte   ... Length
 //   variable ... Value
 //
 // Available tags: { 0x00 = vendor_name, 0x01 = model_name }
