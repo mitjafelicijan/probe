@@ -16,7 +16,7 @@ running it.
 > also written in the most explicit way and lacks massively when it
 > comes to checking of errors etc.
 
-| Example                                | Compiler   | What does it do?                                               |
+|                                        | Compiler   | What does it do?                                               |
 |----------------------------------------|------------|----------------------------------------------------------------|
 | [c-asm](./c-asm)                       | clang-17   | Calls a function written in ASM from C code.                   |
 | [c-embed](./c-embed)                   | clang-17   | Embedding external resources in compiled binary.               |
