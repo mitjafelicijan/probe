@@ -2,7 +2,7 @@
 // Real world example: https://www.rfc-editor.org/rfc/rfc8609
 // Cool article: https://www.huy.rocks/everyday/12-11-2022-zig-using-zig-for-advent-of-code
 
-// Dummy TLV spec for encoding Linux devicei information
+// Dummy TLV spec for encoding Linux device information
 //
 // Packet specification
 //   1byte    ... Tag
