@@ -31,7 +31,7 @@ const TLVPacket = struct {
     length: u8,
     value: std.ArrayList(u8),
 
-    pub fn printEncoded(self: *TLVPacket) void {
+    pub fn printHexEncoded(self: *TLVPacket) void {
         std.debug.print("\t", .{});
         std.debug.print("{X:0>2}-", .{@intFromEnum(self.tag)});
         std.debug.print("{X:0>2}-", .{self.length});
@@ -88,7 +88,7 @@ test "Create TLV payload manually" {
 
     for (payload.packets.items) |*packet| {
         std.debug.print("Tag: {}, Length: {d}\n", .{ packet.tag, packet.length });
-        packet.printEncoded();
+        packet.printHexEncoded();
     }
 }
 
