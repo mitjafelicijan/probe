@@ -5,9 +5,9 @@
 // Dummy TLV spec for encoding Linux device information
 //
 // Packet specification
-//   1byte    ... Tag
-//   2bytes   ... Length
-//   unknown  ... Value
+//   1 byte   ... Tag
+//   1 bytes  ... Length
+//   variable ... Value
 //
 // Available tags: { 0x00 = vendor_name, 0x01 = model_name }
 // Packet presented as a struct: Packet{ .vendor_name, .model_name }
