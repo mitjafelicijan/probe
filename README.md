@@ -33,6 +33,7 @@ running it.
 | [zig-wad](./zig-wad)                   | zig-0.11.0 | Reads doom.wad and extracts the identification header.         |
 | [zig-os-props](./zig-os-props)         | zig-0.11.0 | Detects properties of the target operating system.             |
 | [zig-tlv-encoding](./zig-tlv-encoding) | zig-0.13.0 | Naive implementation of TLV encoding in Zig.                   |
+| [zig-embed](./zig-embed)               | zig-0.13.0 | Embedding external resources in compiled binary.               |
 
 ## License
 
