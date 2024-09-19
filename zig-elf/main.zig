@@ -1,12 +1,6 @@
 // $ readelf -h ./elf
 // https://github.com/bminor/binutils-gdb/blob/master/binutils/readelf.c
 
-// There is still a problem with packed structs and aligment padding
-// better referenced in these two threads (sometime struct is not aligned
-// properly or even has 1 byte more than its C alternative):
-//  - https://ziggit.dev/t/mapping-64-u8-buffer-to-a-struct/6052/19
-//  - https://ziggit.dev/t/wrong-sizes-of-extern-packed-structs/6053/6
-
 const std = @import("std");
 
 const Elf64ExecutionHeader = packed struct {
@@ -30,10 +24,10 @@ pub fn main() !void {
     var file = try std.fs.cwd().openFile("./elf", .{});
     defer file.close();
 
-    var buffer: [64]u8 = undefined;
-    _ = try file.read(buffer[0..]);
+    var buffer: [64]u8 align(@alignOf(Elf64ExecutionHeader)) = undefined;
+    _ = try file.read(buffer[0..@sizeOf(Elf64ExecutionHeader)]);
 
-    const header: *Elf64ExecutionHeader = @ptrCast(@alignCast(&buffer));
+    const header: *Elf64ExecutionHeader = @ptrCast(&buffer);
 
     std.debug.print("sizeOf(Elf64ExecutionHeader) = {}\n", .{@sizeOf(Elf64ExecutionHeader)});
     std.debug.print("bitSizeOf(Elf64ExecutionHeader) = {} ({}/8={d})\n", .{
@@ -51,8 +45,8 @@ pub fn main() !void {
     std.debug.print("Processor-specific flags: 0x{X:0>2}\n", .{header.flags});
     std.debug.print("ELF header size in bytes: {}\n", .{header.ehsize});
     std.debug.print("Program header table entry size: {}\n", .{header.phentsize});
-    // std.debug.print("Program header table entry count: {}\n", .{header.phnum});
-    // std.debug.print("Section header table entry size: {}\n", .{header.shentsize});
-    // std.debug.print("Section header table entry count: {}\n", .{header.shnum});
-    // std.debug.print("Section header string table index: {}\n", .{header.shstrndx});
+    std.debug.print("Program header table entry count: {}\n", .{header.phnum});
+    std.debug.print("Section header table entry size: {}\n", .{header.shentsize});
+    std.debug.print("Section header table entry count: {}\n", .{header.shnum});
+    std.debug.print("Section header string table index: {}\n", .{header.shstrndx});
 }
