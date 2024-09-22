@@ -17,7 +17,7 @@ running it.
 > comes to checking of errors etc.
 
 |                                        | Compiler   | What does it do?                                               |
-|----------------------------------------|------------|----------------------------------------------------------------|
+|:----------------------------------------|:------------|:----------------------------------------------------------------:|
 | [c-asm](./c-asm)                       | clang-17   | Calls a function written in ASM from C code.                   |
 | [c-embed](./c-embed)                   | clang-17   | Embedding external resources in compiled binary.               |
 | [c-signals](./c-signals)               | clang-17   | Uses SIGUSR1 and SIGUSR2 as IPC mechanism.                     |
@@ -43,6 +43,3 @@ running it.
 Felicijan](https://mitjafelicijan.com) and is released under the BSD
 zero-clause license, see the LICENSE file for more information.
 
-<style>
-    table {width: 100%;}
-</style>
