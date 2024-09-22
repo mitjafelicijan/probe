@@ -42,3 +42,7 @@ running it.
 [probe](https://github.com/mitjafelicijan/probe) was written by [Mitja
 Felicijan](https://mitjafelicijan.com) and is released under the BSD
 zero-clause license, see the LICENSE file for more information.
+
+<style>
+    table {width: 100%;}
+</style>
