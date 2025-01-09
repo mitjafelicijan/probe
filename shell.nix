@@ -15,6 +15,7 @@
 		lldb
 
 		# Dev libraries and deps.
+		bluez
 		xorg.libX11
 		xorg.libX11.dev
 	];

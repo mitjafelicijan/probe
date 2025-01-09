@@ -36,6 +36,7 @@ running it.
 | [zig-embed](./zig-embed)               | zig-0.13.0 | Embedding external resources in compiled binary.               |
 | [zig-struct-bin](./zig-struct-bin)     | zig-0.13.0 | Save a struct into binary file and then reading it back.       |
 | [zig-elf](./zig-elf)                   | zig-0.14.0 | Read execution header of Elf64 format in Zig.                  |
+| [c-bluetooth](./c-bluetooth)           | clang-17   | Scans for all Bluetooth devices.                               |
 
 ## License
 
