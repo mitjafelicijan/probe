@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 	ii = (inquiry_info*)malloc(max_rsp * sizeof(inquiry_info));
 
 	num_rsp = hci_inquiry(dev_id, len, max_rsp, NULL, &ii, flags);
-	if(num_rsp < 0) {
+	if( num_rsp < 0 ) {
 		perror("hci_inquiry");
 	}
 
