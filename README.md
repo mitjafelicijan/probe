@@ -1,5 +1,7 @@
 **Just testing things.**
 
+![](https://github.com/user-attachments/assets/5e4422e4-530b-41ea-8d4f-fa5df78fc34f)
+
 Nothing crazy here. I put little experiments and tests I do here so I can
 reference them later if I need to.
 
