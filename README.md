@@ -40,6 +40,7 @@ running it.
 | [zig-struct-bin](./zig-struct-bin)     | zig-0.13.0 | Save a struct into binary file and then reading it back.       |
 | [zig-elf](./zig-elf)                   | zig-0.14.0 | Read execution header of Elf64 format in Zig.                  |
 | [c-bluetooth](./c-bluetooth)           | clang-17   | Scans for all Bluetooth devices.                               |
+| [d-x11](./d-x11)                       | dmd-2.110  | Uses X11 to create a basic window without any bindings needed. |
 
 ## License
 
