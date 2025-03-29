@@ -42,6 +42,7 @@ running it.
 | [c-bluetooth](./c-bluetooth)           | clang-17   | Scans for all Bluetooth devices.                               |
 | [d-x11](./d-x11)                       | dmd-2.110  | Uses X11 to create a basic window without any bindings needed. |
 | [d-bmp-header](./d-bmp-header)         | dmd-2.110  | Reads BMP image header and prints the information out.         |
+| [c-luajit](./c-luajit)                 | clang-19   | Testing execution speed of Lua vs Luajit vs embedded Luajit.   |
 
 ## License
 

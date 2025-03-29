@@ -1,0 +1,28 @@
+* Running with just normal Lua
+
+  $ time lua fibonacci.lua
+  The 40th Fibonacci number is: 102334155
+  
+  real    0m5.601s
+  user    0m5.590s
+  sys     0m0.001s
+
+* Running with Luajit
+
+  $ luajit -b fibonacci.lua fibonacci.luac
+  $ time luajit fibonacci.luac
+  The 40th Fibonacci number is: 102334155
+  
+  real    0m1.050s
+  user    0m1.047s
+  sys     0m0.001s
+
+* Running with Luajit embedded into C
+
+  $ cc -o fibonacci fibonacci.c `pkg-config --cflags --libs luajit`
+  $ time ./fibonacci
+  The 40th Fibonacci number is: 102334155
+  
+  real    0m1.033s
+  user    0m1.031s
+  sys     0m0.000s
