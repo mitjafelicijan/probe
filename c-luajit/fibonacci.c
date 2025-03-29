@@ -2,7 +2,7 @@
 #include <lualib.h>
 #include <lauxlib.h>
 
-int main(int argc, char **argv) {
+int main(void) {
 	lua_State *L = luaL_newstate();
 	luaL_openlibs(L);
 
