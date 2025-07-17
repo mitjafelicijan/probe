@@ -4,9 +4,20 @@
 
 #include "hi.h"
 
+static int l_sum(lua_State *L) {
+	double a = luaL_checknumber(L, 1);
+	double b = luaL_checknumber(L, 2);
+	lua_pushnumber(L, a + b);
+	return 1;
+}
+
 int main(void) {
 	lua_State *L = luaL_newstate();
 	luaL_openlibs(L);
+
+	// You do not need to prefix name of the function with `c_`. I did it to
+	// make it clear in the lua script code that this is a custom function.
+	lua_register(L, "c_sum", l_sum);
 
 	// Not wise since this is not a null-terminated string.
 	/* luaL_dostring(L, (const char*)hi); */

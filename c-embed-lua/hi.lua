@@ -104,3 +104,10 @@ for line in file:lines() do
 end
 
 file:close()
+
+-- Exposing C functions.
+
+header("Exposing C functions")
+
+local result = c_sum(3, 5)
+print("Sum is", result)
