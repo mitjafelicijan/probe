@@ -1,0 +1,7 @@
+You could make this byte array null terminated and use `luaL_dostring` but that
+is probably not advisable.
+
+	xxd -n hi -i hi.lua | sed 's/};/,\ 0\n};/' > hi.h
+
+Much better to use `luaL_loadbuffer` instead.
+https://www.lua.org/manual/5.4/manual.html#luaL_loadbuffer

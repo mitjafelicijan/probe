@@ -45,6 +45,7 @@ running it.
 | [c-luajit](./c-luajit)                   | clang-19   | Testing execution speed of Lua vs Luajit vs embedded Luajit.   |
 | [c-embedding-data](./c-embedding-data)   | clang-19   | Embedding game assets to executable binary (with raylib).      |
 | [c-sqlite-embed-db](./c-sqlite-embed-db) | clang-17   | Embeds SQLite and SQLite database into executable.             |
+| [c-embed-lua](./c-embed-lua)             | clang-17   | Embeds Lua interpreter and Lua script into executable.         |
 
 ## License
 
