@@ -5,7 +5,9 @@ import rl "vendor:raylib"
 
 main :: proc() {
 	rl.SetConfigFlags({.VSYNC_HINT, .WINDOW_RESIZABLE, .WINDOW_HIGHDPI})
+
 	rl.InitWindow(1280, 720, "Raylib Window")
+	defer rl.CloseWindow()
 
 	rl.SetTargetFPS(500)
 
@@ -16,6 +18,4 @@ main :: proc() {
 		rl.DrawFPS(rl.GetScreenWidth() - 100, 20);
 		rl.EndDrawing()
 	}
-
-	rl.CloseWindow()
 }
